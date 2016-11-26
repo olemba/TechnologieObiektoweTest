@@ -28,7 +28,7 @@ public class PacientController {
         return pacientRepository.findAll();
     }
 
-    @RequestMapping(value = "/add", method = RequestMethod.PUT)
+    @RequestMapping(value = "/add", method = RequestMethod.POST)
     public void addPacient(@RequestBody Pacient pacient){
         pacientRepository.save(pacient);
     }
